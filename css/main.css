@@ -1,7 +1,7 @@
 /* Root level variables */
 
 :root {
-    --primary-color: hsl(100, 57%, 51%);
+    --primary-color: hsl(44, 89%, 52%);
 }
 
 
@@ -43,8 +43,103 @@ body {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
+    background-color: #272727;
+}
+
+
+/* Classes */
+
+.rotating {
+    animation: rotating 3s linear infinite;
+}
+
+.underlined {
+    text-decoration: underline;
 }
 
 footer {
     align-self: center;
+}
+
+
+/* Cookie styling */
+
+#cookie-banner {
+    --border-radius: 10px;
+    --header-color: dodgerblue;
+    --background-color: black;
+    position: fixed;
+    bottom: 5vh;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    flex-flow: column nowrap;
+    gap: 20px;
+    border-radius: var(--border-radius);
+    background-color: var(--background-color);
+    border: 1px solid red;
+}
+
+#cookie-banner section {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+#cookie-banner section.header {
+    background-color: var(--header-color);
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+#cookie-banner section h2 {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    font-size: 3rem;
+}
+
+#cookie-banner section img {
+    width: 1.5em;
+}
+
+#cookie-banner section.content {
+    flex-direction: column;
+}
+
+#cookie-banner section h3,
+#cookie-banner section p {
+    width: 100%;
+}
+
+#cookie-banner section.action {
+    justify-content: space-between;
+}
+
+#cookie-banner section button {
+    border: none;
+    background: none;
+}
+
+#cookie-banner section span.btn-group {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 50px;
+}
+
+#cookie-banner section button:hover {
+    text-decoration: 2px solid red underline;
+}
+
+
+/* Animations */
+
+@keyframes rotating {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
