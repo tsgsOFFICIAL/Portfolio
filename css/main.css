@@ -1,0 +1,50 @@
+/* Root level variables */
+
+:root {
+    --primary-color: hsl(100, 57%, 51%);
+}
+
+
+/* Remove the underline from any links */
+
+a {
+    text-decoration: none;
+}
+
+
+/* Remove all margins and paddings, Remove blue highlight on mobile & Change the default font-family & color */
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--primary-color);
+}
+
+
+/* Set font-size to 62.5% so 0.1rem = 1 px */
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+
+/* Stretch to fill the entire page */
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+footer {
+    align-self: center;
+}
