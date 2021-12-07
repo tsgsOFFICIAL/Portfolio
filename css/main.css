@@ -1,13 +1,17 @@
 /* Root level variables */
 
 :root {
-    --primary-color: hsl(44, 89%, 52%);
+    --background-color: hsl(197, 7%, 21%);
+    --primary-color: hsl(0, 100%, 99%);
+    --success-color: hsl(144, 95%, 44%);
+    --fail-color: hsl(358, 100%, 55%);
 }
 
 
-/* Remove the underline from any links */
+/* Remove link styling */
 
 a {
+    color: inherit;
     text-decoration: none;
 }
 
@@ -20,6 +24,7 @@ a {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     font-family: cursive;
     font-weight: 400;
@@ -43,7 +48,7 @@ body {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
-    background-color: #272727;
+    background-color: var(--background-color);
 }
 
 
@@ -53,7 +58,7 @@ body {
     animation: rotating 3s linear infinite;
 }
 
-.underlined {
+.underline {
     text-decoration: underline;
 }
 
@@ -67,23 +72,20 @@ footer {
 #cookie-banner {
     --border-radius: 10px;
     --header-color: dodgerblue;
-    --background-color: black;
     position: fixed;
     bottom: 5vh;
     display: flex;
+    flex-flow: column nowrap;
     align-items: center;
     align-self: center;
-    flex-flow: column nowrap;
     gap: 20px;
     border-radius: var(--border-radius);
-    background-color: var(--background-color);
-    border: 1px solid red;
+    background-color: #191919;
 }
 
 #cookie-banner section {
     display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
+    flex-flow: row wrap;
     width: 100%;
     padding: 10px 20px;
 }
@@ -97,7 +99,7 @@ footer {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    font-size: 3rem;
+    font-size: 4.4rem;
 }
 
 #cookie-banner section img {
@@ -113,13 +115,38 @@ footer {
     width: 100%;
 }
 
+#cookie-banner section h3 {
+    font-size: 2.8rem;
+}
+
+#cookie-banner section p {
+    font-size: 1.6rem;
+}
+
 #cookie-banner section.action {
     justify-content: space-between;
 }
 
 #cookie-banner section button {
     border: none;
+    border-radius: 5px;
+    padding: 10px 30px;
     background: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+#cookie-banner section button#cookie-btn-learn-more {
+    background: var(--background-color);
+}
+
+#cookie-banner section button#cookie-btn-reject {
+    background: var(--fail-color);
+}
+
+#cookie-banner section button#cookie-btn-accept {
+    background: var(--success-color);
 }
 
 #cookie-banner section span.btn-group {
