@@ -1,0 +1,1 @@
+// document.documentElement.style.setProperty('--root-level-variable', 'value');
