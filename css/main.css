@@ -70,6 +70,7 @@ footer {
 /* Cookie styling */
 
 #cookie-banner {
+    --gap: 12px;
     --border-radius: 10px;
     --header-color: dodgerblue;
     position: fixed;
@@ -78,16 +79,28 @@ footer {
     flex-flow: column nowrap;
     align-items: center;
     align-self: center;
-    gap: 20px;
+    gap: var(--gap);
     border-radius: var(--border-radius);
     background-color: #191919;
+    pointer-events: none;
+    opacity: 0;
+}
+
+#cookie-banner.animateOut {
+    animation: slideDownCollapse .69s ease;
+}
+
+#cookie-banner.visible {
+    opacity: 1;
+    animation: slideUpExpand .69s ease;
+    pointer-events: auto;
 }
 
 #cookie-banner section {
     display: flex;
     flex-flow: row wrap;
     width: 100%;
-    padding: 10px 20px;
+    padding: 15px;
 }
 
 #cookie-banner section.header {
@@ -117,17 +130,20 @@ footer {
 
 #cookie-banner section h3 {
     font-size: 2.8rem;
+    margin-bottom: var(--gap);
 }
 
 #cookie-banner section p {
     font-size: 1.6rem;
+    line-height: 1.69;
 }
 
 #cookie-banner section.action {
     justify-content: space-between;
 }
 
-#cookie-banner section button {
+#cookie-banner section button,
+#cookie-banner section.action a {
     border: none;
     border-radius: 5px;
     padding: 10px 30px;
@@ -135,9 +151,16 @@ footer {
     cursor: pointer;
     font-weight: 500;
     font-size: 1.6rem;
+    transition: 150ms ease;
 }
 
-#cookie-banner section button#cookie-btn-learn-more {
+#cookie-banner section span.btn-group {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 25px;
+}
+
+#cookie-banner section a#cookie-learn-more {
     background: var(--background-color);
 }
 
@@ -149,14 +172,10 @@ footer {
     background: var(--success-color);
 }
 
-#cookie-banner section span.btn-group {
-    display: flex;
-    flex-flow: row nowrap;
-    gap: 50px;
-}
-
-#cookie-banner section button:hover {
-    text-decoration: 2px solid red underline;
+#cookie-banner section button:hover,
+#cookie-banner section.action a:hover {
+    filter: opacity(.75);
+    transform: scale(.9);
 }
 
 
@@ -168,5 +187,35 @@ footer {
     }
     100% {
         transform: rotate(360deg);
+    }
+}
+
+@keyframes slideUpExpand {
+    0% {
+        transform: translateY(100vh) scale(.8);
+        opacity: .69;
+    }
+    80% {
+        transform: translateY(0) scale(.8);
+        opacity: .69;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slideDownCollapse {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    80% {
+        transform: translateY(0) scale(.8);
+        opacity: .69;
+    }
+    100% {
+        transform: translateY(100vh) scale(.8);
+        opacity: .69;
     }
 }
