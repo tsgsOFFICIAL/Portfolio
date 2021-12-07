@@ -207,7 +207,7 @@ footer {
 
 @keyframes slideDownCollapse {
     0% {
-        transform: translateY(0) scale(1);
+        transform: scale(1);
         opacity: 1;
     }
     80% {
