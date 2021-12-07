@@ -1,8 +1,8 @@
 /* Root level variables */
 
 :root {
-    --background-color: hsl(197, 7%, 21%);
-    --primary-color: hsl(0, 100%, 99%);
+    --background-color: hsl(195, 6%, 13%);
+    --primary-text-color: hsl(0, 100%, 99%);
     --success-color: hsl(144, 95%, 44%);
     --fail-color: hsl(358, 100%, 55%);
 }
@@ -29,7 +29,7 @@ a {
     font-family: cursive;
     font-weight: 400;
     font-style: normal;
-    color: var(--primary-color);
+    color: var(--primary-text-color);
 }
 
 
@@ -94,6 +94,10 @@ footer {
     opacity: 1;
     animation: slideUpExpand .69s ease;
     pointer-events: auto;
+}
+
+#cookie-banner a:not(.underline) {
+    text-decoration: none;
 }
 
 #cookie-banner section {

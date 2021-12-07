@@ -14,18 +14,20 @@
     <link rel="icon" href="/logo.png">
     <link rel="apple-touch-icon" href="/logo.png">
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/index.css">
     <script type="text/javascript" src="/js/cookie.js" defer></script>
     <script type="text/javascript" src="/js/main.js" defer></script>
 </head>
 
-<body>
+<body id="top">
     <header>
         <h2>Marcus Jensen</h2>
         <nav>
             <ul>
-                <li>test</li>
-                <li>test2</li>
-                <li>test3</li>
+                <li><a href="#top" class="underline">Home</a></li>
+                <li><a href="#projects" class="underline-hover">Projects</a></li>
+                <li><a href="#about" class="underline-hover">About</a></li>
+                <li><a href="#contact" class="underline-hover">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -57,8 +59,48 @@
     </article>
 
     <main>
+        <article id="projects">
+            <section class="container">
+                <article class="card">
+                    <section class="top">
+                        <div class="content">
+                            <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/design_128.png?raw=true">
+                            <h3>CloudKey</h3>
+                        </div>
+                    </section>
+                    <section class="bottom">
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </section>
+                </article>
+                <article class="card">
+                    <section class="top">
+                        <div class="content">
+                            <img src="https://via.placeholder.com/2000/565656/FFFCFF/?text=Project">
+                            <h3>Project</h3>
+                        </div>
+                    </section>
+                    <section class="bottom">
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </section>
+                </article>
+            </section>
+        </article>
 
+        <article id="about">
+
+        </article>
+
+        <article id="contact">
+
+        </article>
     </main>
+
     <footer>
         <h2>&copy; 2020 - 2021 <a href="/" target="_self">Marcus Jensen</a>, All Rights Reserved.</h2>
     </footer>
