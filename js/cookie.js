@@ -8,9 +8,11 @@ if (isCookieConsent()) {
     if (getCookie("cookie_consent") == "false") {
         // Do nothing, user has rejected cookies
     } else {
-        document.addEventListener("click", closeCookiePopup);
-
         cookieBanner.classList.add("visible");
+
+        cookieBanner.addEventListener("animationend", () => {
+            document.addEventListener("click", closeCookiePopup);
+        });
     }
 }
 
@@ -31,9 +33,9 @@ function acceptCookies() {
     cookieBanner.classList.add("animateOut");
     cookieBanner.classList.remove("visible");
 
-    setTimeout(() => {
+    cookieBanner.addEventListener("animationend", () => {
         cookieBanner.remove();
-    }, 2000);
+    });
 
 }
 
