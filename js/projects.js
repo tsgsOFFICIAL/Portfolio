@@ -31,16 +31,57 @@ projectArray.push(new Project(
     "PUBG Live Stats Tracker",
     "/img/projects/pubg-live-stats-tracker/helmet.png",
     "Short description of PUBG Live Stats Tracker",
-    "Longer description of how and why PUBG Live Stats Tracker was made, and how it works",
-    "/img/projects/tpph/touch-portal.gif"
+    "Longer description of how and why PUBG Live Stats Tracker was made, and how it works"
 ));
 
 projectArray.push(new Project(
     "CloudKey",
-    "/img/projects/cloudkey/logo.png",
+    "/img/projects/cloudkey/cloudkey.png",
     "Short description of CloudKey",
-    "Longer description of how and why CloudKey was made, and how it works",
-    "/img/projects/tpph/touch-portal.gif"
+    "Longer description of how and why CloudKey was made, and how it works"
+));
+
+projectArray.push(new Project(
+    "RAT",
+    "/img/projects/rat/rat.png",
+    "Short description of RAT",
+    "Longer description of how and why RAT was made, and how it works"
+));
+
+projectArray.push(new Project(
+    "Webshop",
+    "/img/projects/webshop/webshop.png",
+    "Short description of Webshop",
+    "Longer description of how and why Webshop was made, and how it works",
+    "/img/projects/webshop/screenshot.png"
+));
+
+projectArray.push(new Project(
+    "CS:GO Bomb",
+    "https://via.placeholder.com/150/333/FFFAFA/?text=Project",
+    "Short description of CS:GO Bomb",
+    "Longer description of how and why CS:GO Bomb was made, and how it works"
+));
+
+projectArray.push(new Project(
+    "CS:GO Auto Accept",
+    "https://via.placeholder.com/150/333/FFFAFA/?text=Project",
+    "Short description of CS:GO Auto Accept",
+    "Longer description of how and why CS:GO Auto Accept was made, and how it works"
+));
+
+projectArray.push(new Project(
+    "Discord Bot",
+    "https://via.placeholder.com/150/333/FFFAFA/?text=Project",
+    "Short description of Discord Bot",
+    "Longer description of how and why Discord Bot was made, and how it works"
+));
+
+projectArray.push(new Project(
+    "Keylogger",
+    "https://via.placeholder.com/150/333/FFFAFA/?text=Project",
+    "Short description of Keylogger",
+    "Longer description of how and why Keylogger was made, and how it works"
 ));
 
 

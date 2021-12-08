@@ -108,6 +108,7 @@ body {
 
 footer {
     align-self: center;
+    padding: 2rem 0;
 }
 
 
@@ -118,6 +119,7 @@ footer {
     --border-radius: 10px;
     --header-color: dodgerblue;
     position: fixed;
+    z-index: 10;
     bottom: 5vh;
     display: flex;
     flex-flow: column nowrap;
