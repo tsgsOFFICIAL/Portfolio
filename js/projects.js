@@ -95,6 +95,7 @@ window.addEventListener("load", () => {
 
         // Create read more button
         const readMore = document.createElement("button");
+        readMore.type = "button"
         readMore.innerText = `Read more`;
         readMore.title = `Click here to read more about ${project.name}`
 
