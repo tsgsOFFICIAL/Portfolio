@@ -92,7 +92,7 @@ main>article {
 }
 
 .container .card .bottom .content p,
-.container .card .bottom .content a {
+.container .card .bottom .content button {
     color: var(--text-color);
 }
 
@@ -107,15 +107,18 @@ main>article {
     -webkit-box-orient: vertical;
 }
 
-.container .card .bottom .content a {
+.container .card .bottom .content button {
     margin: 5% 0 0;
-    display: inline-block;
-    text-decoration: none;
-    font-weight: 900;
-    color: #333;
     padding: 5px;
     border: 1px solid #333;
+    border-radius: 3px;
+    background-color: transparent;
+    color: #333;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-decoration: none;
     transition: .2s ease;
+    cursor: pointer;
 }
 
 
@@ -134,6 +137,6 @@ main>article {
     transform: translateY(-50%);
 }
 
-.container .card .bottom .content a:hover {
+.container .card .bottom .content button:hover {
     color: red;
 }
