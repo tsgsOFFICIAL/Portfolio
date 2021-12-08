@@ -1,22 +1,33 @@
+main>article {
+    height: 100vh;
+    margin-left: 5%;
+    max-width: 90%;
+    /* border: 1px solid red; */
+}
+
+
+/* PROJECT SECTION */
+
 .container {
+    --text-color: #222526;
+    --gap: 50px;
+    --height: 200px;
     position: relative;
     display: flex;
     flex-flow: row wrap;
-    align-items: flex-start;
-    gap: 2.5%;
-    margin-left: 5%;
-    max-width: 90%;
-    --text-color: #222526;
+    gap: var(--gap);
+    min-height: 50%;
+    margin-top: calc(var(--height) / 2);
     /* border: 1px solid red; */
 }
 
 .container .card {
-    --height: 200px;
     position: relative;
     cursor: pointer;
     min-width: 300px;
     max-width: 10%;
     height: var(--height);
+    margin-bottom: calc(var(--height) / 2 - var(--gap));
     /* border: 1px solid red; */
 }
 
@@ -58,7 +69,8 @@
 .container .card .top .content img {
     max-height: calc(var(--height) / 1.69);
     max-width: 75%;
-    filter: contrast(33%);
+    opacity: .2;
+    /* filter: contrast(20%); */
     transition: .5s ease;
 }
 
@@ -97,15 +109,16 @@
 
 .container .card:hover .top {
     background: #3290CE;
-    transform: translateY(-25%);
+    transform: translateY(-50%);
 }
 
 .container .card:hover .top .content img {
-    filter: contrast(100%);
+    opacity: 1;
+    /* filter: contrast(100%); */
 }
 
 .container .card:hover .bottom {
-    transform: translateY(-25%);
+    transform: translateY(-50%);
 }
 
 .container .card .bottom .content a:hover {
