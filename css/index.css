@@ -6,7 +6,7 @@ main>article {
 }
 
 
-/* PROJECT SECTION */
+/* Project section */
 
 .container {
     --text-color: #222526;
@@ -39,7 +39,7 @@ main>article {
 }
 
 
-/* GENERAL */
+/* General styles */
 
 .container .card .content {
     height: 100%;
@@ -51,7 +51,7 @@ main>article {
 }
 
 
-/* TOP */
+/* Top */
 
 .container .card .top {
     position: relative;
@@ -70,7 +70,6 @@ main>article {
     max-height: calc(var(--height) / 1.69);
     max-width: 75%;
     opacity: .2;
-    /* filter: contrast(20%); */
     transition: .5s ease;
 }
 
@@ -81,7 +80,7 @@ main>article {
 }
 
 
-/* BOTTOM */
+/* Bottom */
 
 .container .card .bottom {
     background: #FFFAFA;
@@ -97,8 +96,19 @@ main>article {
     color: var(--text-color);
 }
 
+.container .card .bottom .content p {
+    font-size: 1.3rem;
+    display: -webkit-box;
+    max-height: 90%;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+}
+
 .container .card .bottom .content a {
-    margin: 15px 0 0;
+    margin: 5% 0 0;
     display: inline-block;
     text-decoration: none;
     font-weight: 900;
@@ -109,7 +119,7 @@ main>article {
 }
 
 
-/* HOVER */
+/* Hover */
 
 .container .card:hover .top {
     background: #3290CE;
@@ -118,7 +128,6 @@ main>article {
 
 .container .card:hover .top .content img {
     opacity: 1;
-    /* filter: contrast(100%); */
 }
 
 .container .card:hover .bottom {
