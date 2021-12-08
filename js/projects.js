@@ -58,28 +58,28 @@ projectArray.push(new Project(
 
 projectArray.push(new Project(
     "CS:GO Bomb",
-    "https://via.placeholder.com/150/333/FFFAFA/?text=Project",
+    "/img/projects/csgo-bomb/bomb.png",
     "Short description of CS:GO Bomb",
     "Longer description of how and why CS:GO Bomb was made, and how it works"
 ));
 
 projectArray.push(new Project(
     "CS:GO Auto Accept",
-    "https://via.placeholder.com/150/333/FFFAFA/?text=Project",
+    "/img/projects/csgo-auto-accept/csgo.png",
     "Short description of CS:GO Auto Accept",
     "Longer description of how and why CS:GO Auto Accept was made, and how it works"
 ));
 
 projectArray.push(new Project(
     "Discord Bot",
-    "https://via.placeholder.com/150/333/FFFAFA/?text=Project",
+    "/img/projects/discord-bot/discord.png",
     "Short description of Discord Bot",
     "Longer description of how and why Discord Bot was made, and how it works"
 ));
 
 projectArray.push(new Project(
     "Keylogger",
-    "https://via.placeholder.com/150/333/FFFAFA/?text=Project",
+    "/img/projects/keylogger/keylogger.png",
     "Short description of Keylogger",
     "Longer description of how and why Keylogger was made, and how it works"
 ));
