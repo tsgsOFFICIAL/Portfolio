@@ -1,5 +1,5 @@
 main>article {
-    height: 100vh;
+    min-height: 100vh;
     margin-left: 5%;
     max-width: 90%;
     /* border: 1px solid red; */
@@ -23,7 +23,6 @@ main>article {
 
 .container .card {
     position: relative;
-    cursor: pointer;
     min-width: 300px;
     max-width: 10%;
     height: var(--height);
@@ -91,8 +90,7 @@ main>article {
     justify-content: space-between;
 }
 
-.container .card .bottom .content p,
-.container .card .bottom .content button {
+.container .card .bottom .content p, .container .card .bottom .content button {
     color: var(--text-color);
 }
 
