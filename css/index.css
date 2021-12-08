@@ -46,7 +46,6 @@ main>article {
     padding: 5%;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
     align-items: flex-start;
     gap: calc(var(--height) / 25);
 }
@@ -64,6 +63,7 @@ main>article {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    justify-content: center;
 }
 
 .container .card .top .content img {
@@ -86,6 +86,10 @@ main>article {
 .container .card .bottom {
     background: #FFFAFA;
     transform: translateY(-100%);
+}
+
+.container .card .bottom .content {
+    justify-content: space-between;
 }
 
 .container .card .bottom .content p,
