@@ -139,6 +139,7 @@ projectArray.forEach((project) => {
     // Create name
     let name = document.createElement("h3");
     name.innerText = project.name;
+    name.className = "overflow-dots";
 
     // Append img & name to content
     content.appendChild(img);
