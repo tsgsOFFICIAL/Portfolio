@@ -3,8 +3,8 @@
 :root {
     --background-color: hsl(195, 6%, 13%);
     --primary-text-color: hsl(0, 100%, 99%);
-    --primary-color: hsl(147, 76%, 43%);
-    --secondary-color: hsl(204, 61%, 50%);
+    --primary-color: hsl(204, 61%, 50%);
+    --secondary-color: hsl(313, 65%, 43%);
     --success-color: hsl(144, 95%, 44%);
     --fail-color: hsl(358, 100%, 55%);
 }
@@ -29,7 +29,7 @@ a {
     outline: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     font-family: "OpenSans", sans-serif;
-    font-weight: 400;
+    font-weight: 100;
     font-style: normal;
     color: var(--primary-text-color);
 }
@@ -255,9 +255,15 @@ header {
 header h1 {
     font-size: 4.6rem;
     font-weight: 700;
-    background-image: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
-    background-clip: text;
-    color: transparent;
+    color: var(--primary-text-color);
+}
+
+@supports (background-clip: text) {
+    header h1 {
+        background-image: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+        background-clip: text;
+        color: transparent;
+    }
 }
 
 header ul {
@@ -265,6 +271,10 @@ header ul {
     display: flex;
     flex-flow: row wrap;
     gap: 2rem;
+}
+
+header ul li a {
+    font-size: 2rem;
 }
 
 

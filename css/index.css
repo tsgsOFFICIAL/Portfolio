@@ -9,7 +9,7 @@ main>article {
 
 .container {
     --text-color: #222526;
-    --hover-color: #3290CE;
+    --hover-color: var(--primary-color);
     --gap: 50px;
     --height: 200px;
     position: relative;
