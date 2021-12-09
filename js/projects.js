@@ -26,7 +26,7 @@ projectArray.push(new Project(
     "/img/projects/tpph/touch-portal.png",
     "I made this application to ease the process of creating a plugin for TouchPortal",
     "Longer description of how and why TouchPortalPluginHelper was made, and how it works",
-    "/img/projects/tpph/test.webp",
+    "/img/projects/tpph/screenshot.png",
     "/img/projects/tpph/touch-portal.gif",
     new Date("15 Aug 2020")
 ));
