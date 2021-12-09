@@ -4,6 +4,11 @@ main>article {
     max-width: 90%;
 }
 
+main>article>h2 {
+    font-size: 2.4rem;
+    font-weight: 300;
+}
+
 
 /* Project section */
 
@@ -72,7 +77,8 @@ main>article {
 .container .card .top .content h3 {
     color: var(--primary-text-color);
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.8em;
+    font-weight: 500;
 }
 
 

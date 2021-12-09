@@ -16,3 +16,22 @@ function changeActiveLink(e) {
         target.className = "underline gradient";
     }
 }
+
+
+window.addEventListener('load', CheckHash);
+
+function CheckHash() {
+    if (location.hash.includes('#')) {
+        const activeLinkName = location.hash.substring(1);
+
+        navLinks.forEach((navLink) => {
+            if (navLink.innerText.toLowerCase() == activeLinkName) {
+                navLink.className = "underline gradient";
+            } else {
+                navLink.className = "underline hover from-middle";
+            }
+        });
+    } else {
+        navLinks[0].className = "underline gradient";
+    }
+}
