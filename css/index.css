@@ -9,6 +9,7 @@ main>article {
 
 .container {
     --text-color: #222526;
+    --hover-color: #3290CE;
     --gap: 50px;
     --height: 200px;
     position: relative;
@@ -120,7 +121,7 @@ main>article {
 /* Hover */
 
 .container .card:hover .top {
-    background: #3290CE;
+    background: var(--hover-color);
     transform: translateY(-50%);
 }
 
@@ -133,7 +134,7 @@ main>article {
 }
 
 .container .card .bottom .content button:hover {
-    color: red;
+    color: var(--hover-color);
 }
 
 

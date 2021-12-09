@@ -3,7 +3,8 @@
 :root {
     --background-color: hsl(195, 6%, 13%);
     --primary-text-color: hsl(0, 100%, 99%);
-    --primary-color: hsl(204, 61%, 50%);
+    --primary-color: hsl(147, 76%, 43%);
+    --secondary-color: hsl(204, 61%, 50%);
     --success-color: hsl(144, 95%, 44%);
     --fail-color: hsl(358, 100%, 55%);
 }
@@ -77,24 +78,33 @@ body {
     text-decoration: underline;
 }
 
-.underline-hover {
-    background-image: linear-gradient(90deg, red, red);
-    background-size: 0% 2px;
+.underline.gradient {
+    text-decoration: none;
+    background-image: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    background-size: 100% 1px;
+    background-repeat: no-repeat;
+    background-position: 0% 100%;
+}
+
+.underline.hover {
+    text-decoration: none;
+    background-image: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    background-size: 0% 1px;
     background-repeat: no-repeat;
     background-position: 0% 100%;
     transition: background-size .3s ease;
 }
 
-.underline-hover.from-right {
+.underline.hover.from-right {
     background-position: 100% 100%;
 }
 
-.underline-hover.from-middle {
+.underline.hover.from-middle {
     background-position: 50% 100%;
 }
 
-.underline-hover:hover {
-    background-size: 100% 2px;
+.underline.hover:hover {
+    background-size: 100% 1px;
 }
 
 .overflow-dots {
@@ -226,6 +236,34 @@ footer {
 #cookie-banner section.action a:hover {
     filter: opacity(.75);
     transform: scale(.9);
+}
+
+
+/* Header */
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2rem 5%;
+    border: 1px solid red;
+}
+
+header h1 {
+    font-size: 4.6rem;
+    font-weight: 700;
+    background-image: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    background-clip: text;
+    color: transparent;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2rem;
 }
 
 
