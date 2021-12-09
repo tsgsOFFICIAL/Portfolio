@@ -175,9 +175,9 @@ projectArray.forEach((project) => {
         modal.querySelector("h3").innerText = `${project.name}`;
 
         const modalContent = modal.querySelector(".content");
-        modalContent.style.backgroundImage = `url("${project.modalImg}")`;
-        modalContent.style.backgroundRepeat = "no-repeat";
-        modalContent.style.backgroundPosition = "center";
+        // modalContent.style.backgroundImage = `url("${project.modalImg}")`;
+        // modalContent.style.backgroundRepeat = "no-repeat";
+        // modalContent.style.backgroundPosition = "center";
         modalContent.querySelector("p.short").innerText = project.shortDescription;
         modalContent.querySelector("p.long").innerText = project.longDescription;
     });
