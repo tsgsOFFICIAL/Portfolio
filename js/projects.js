@@ -193,7 +193,8 @@ projectArray.forEach((project) => {
         // modalContent.style.backgroundImage = `url("${project.modalImg}")`;
         // modalContent.style.backgroundRepeat = "no-repeat";
         // modalContent.style.backgroundPosition = "center";
-        modalContent.querySelector("p.short").innerText = project.shortDescription;
+        modalContent.querySelector("p.date").innerText = `Date: ${project.date.getDate()}/${project.date.getMonth() + 1}/${project.date.getFullYear()}`;
+        // modalContent.querySelector("p.short").innerText = project.shortDescription;
         modalContent.querySelector("img.screenshot").src = project.modalScreenshot;
         modalContent.querySelector("p.long").innerText = project.longDescription;
     });
