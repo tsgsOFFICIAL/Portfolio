@@ -154,10 +154,10 @@ main>article>h2 {
     z-index: 1;
     width: 100%;
     min-height: 100vh;
-    height: 100vh;
     flex-flow: column nowrap;
     justify-content: flex-start;
     background-color: var(--background-color);
+    overflow-y: auto;
 }
 
 .modal.open {
@@ -174,19 +174,28 @@ main>article>h2 {
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    min-height: 4rem;
+    padding: 2rem 0;
+    margin-left: 5%;
+    max-width: 90%;
 }
 
 .modal .header h3 {
-    font-size: 2rem;
-    font-weight: 200;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.4rem;
+    font-weight: 500;
+}
+
+.modal .header .animatedIcon {
+    width: 2.5em;
 }
 
 .modal .header button {
     position: absolute;
-    right: 0;
-    margin-right: 1.5rem;
-    font-size: 3.69rem;
+    right: 5%;
+    font-size: 5.69rem;
     background-color: transparent;
     border: none;
     transition: .2s ease;
@@ -198,5 +207,17 @@ main>article>h2 {
 }
 
 .modal .content {
-    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 2.5rem;
+    font-size: 2rem;
+    margin-left: 5%;
+    max-width: 90%;
+    border: 1px solid red;
+}
+
+.modal .content img.screenshot {
+    max-width: 100%;
+    max-height: 50%;
 }

@@ -1,13 +1,14 @@
 /* Classes */
 
 class Project {
-    constructor(name, cardImg, shortDescription, longDescription, modalImg, date) {
+    constructor(name, cardImg, shortDescription, longDescription, modalScreenshot, modalAnimatedIcon, date) {
         // Properties
         this.name = name;
         this.cardImg = cardImg;
         this.shortDescription = shortDescription;
         this.longDescription = longDescription;
-        this.modalImg = modalImg;
+        this.modalScreenshot = modalScreenshot;
+        this.modalAnimatedIcon = modalAnimatedIcon;
         this.date = date;
 
         // Methods
@@ -25,7 +26,8 @@ projectArray.push(new Project(
     "/img/projects/tpph/touch-portal.png",
     "I made this application to ease the process of creating a plugin for TouchPortal",
     "Longer description of how and why TouchPortalPluginHelper was made, and how it works",
-    "/img/projects/tpph/screenshot.png",
+    "/img/projects/tpph/test.webp",
+    "/img/projects/tpph/touch-portal.gif",
     new Date("15 Aug 2020")
 ));
 
@@ -35,6 +37,7 @@ projectArray.push(new Project(
     "This application is one of my favourites, its not quite done yet, as there is a lot of fine tuning in the OCR, but the end result will be great! Its purpose is to take a screencapture, store it in its memory and then read the text on said screencapture by using an OCR engine, aswell as uploading the results in real-time to make live statistics available.",
     "Longer description of how and why PUBG Live Stats Tracker was made, and how it works",
     "/img/projects/pubg-live-stats-tracker/screenshot.png",
+    "",
     new Date("19 Aug 2020")
 ));
 
@@ -43,6 +46,7 @@ projectArray.push(new Project(
     "/img/projects/cloudkey/cloudkey.png",
     "Short description of CloudKey",
     "Longer description of how and why CloudKey was made, and how it works",
+    "",
     "",
     new Date("22 Mar 2021")
 ));
@@ -53,6 +57,7 @@ projectArray.push(new Project(
     "Short description of RAT",
     "Longer description of how and why RAT was made, and how it works",
     "",
+    "",
     new Date("1 Sep 2020")
 ));
 
@@ -62,6 +67,7 @@ projectArray.push(new Project(
     "Short description of Webshop",
     "Longer description of how and why Webshop was made, and how it works",
     "/img/projects/webshop/screenshot.png",
+    "",
     new Date("19 Oct 2021")
 ));
 
@@ -70,6 +76,7 @@ projectArray.push(new Project(
     "/img/projects/csgo-bomb/bomb.png",
     "Short description of CS:GO Bomb",
     "Longer description of how and why CS:GO Bomb was made, and how it works",
+    "",
     "",
     new Date("17 May 2021")
 ));
@@ -80,6 +87,7 @@ projectArray.push(new Project(
     "Short description of CS:GO Auto Accept",
     "Longer description of how and why CS:GO Auto Accept was made, and how it works",
     "",
+    "",
     new Date("4 Apr 2021")
 ));
 
@@ -88,6 +96,7 @@ projectArray.push(new Project(
     "/img/projects/discord-bot/discord.png",
     "Short description of Discord Bot",
     "Longer description of how and why Discord Bot was made, and how it works",
+    "",
     "",
     new Date("14 Aug 2020")
 ));
@@ -98,6 +107,7 @@ projectArray.push(new Project(
     "Short description of Twitch Bot",
     "Longer description of how and why Twitch Bot was made, and how it works",
     "/img/projects/twitch-bot/demo.gif",
+    "",
     new Date("13 May 2020")
 ));
 
@@ -106,6 +116,7 @@ projectArray.push(new Project(
     "/img/projects/keylogger/keylogger.png",
     "Short description of Keylogger",
     "Longer description of how and why Keylogger was made, and how it works",
+    "",
     "",
     new Date("17 Nov 2020")
 ));
@@ -172,13 +183,18 @@ projectArray.forEach((project) => {
         document.querySelector("body").style.overflow = "hidden"; // Disable scroll on the body
         modal.classList.add("open");
 
-        modal.querySelector("h3").innerText = `${project.name}`;
+        const modalHeader = modal.querySelector(".header h3");
+
+        modalHeader.querySelector(".animatedIcon").src = project.modalAnimatedIcon;
+        modalHeader.querySelector("span").innerText = project.name;
 
         const modalContent = modal.querySelector(".content");
+
         // modalContent.style.backgroundImage = `url("${project.modalImg}")`;
         // modalContent.style.backgroundRepeat = "no-repeat";
         // modalContent.style.backgroundPosition = "center";
         modalContent.querySelector("p.short").innerText = project.shortDescription;
+        modalContent.querySelector("img.screenshot").src = project.modalScreenshot;
         modalContent.querySelector("p.long").innerText = project.longDescription;
     });
 
