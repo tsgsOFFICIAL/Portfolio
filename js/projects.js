@@ -171,7 +171,7 @@ projectArray.forEach((project) => {
         document.querySelector("body").style.overflow = "hidden"; // Disable scroll on the body
         modal.classList.add("open");
 
-        modal.querySelector("h3").innerText = `${project.name} (${project.date.getDate()}/${project.date.getMonth() + 1}/${project.date.getFullYear()})`;
+        modal.querySelector("h3").innerText = `${project.name}`;
 
         const modalContent = modal.querySelector(".content");
         modalContent.style.backgroundImage = `url("${project.modalImg}")`;
