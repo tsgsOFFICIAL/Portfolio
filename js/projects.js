@@ -121,6 +121,16 @@ projectArray.push(new Project(
     new Date("17 Nov 2020")
 ));
 
+projectArray.push(new Project(
+    "CSS Credit Card",
+    "/img/projects/css-credit-card/card.png",
+    "Short description of CSS Credit Card",
+    "Check out my <a href=\"https://cdpn.io/tsgsOFFICIAL/debug/eYEeGXa/GnAnbXPpPymA\" target=\"_blank\" class=\"underline hover from-middle\">CSS Credit Card</a> on CodePen",
+    "",
+    "",
+    new Date("2 Nov 2020")
+));
+
 
 
 const projects = document.getElementById("projects");
@@ -196,7 +206,7 @@ projectArray.forEach((project) => {
         modalContent.querySelector("p.date").innerText = `Date: ${project.date.getDate()}/${project.date.getMonth() + 1}/${project.date.getFullYear()}`;
         // modalContent.querySelector("p.short").innerText = project.shortDescription;
         modalContent.querySelector("img.screenshot").src = project.modalScreenshot;
-        modalContent.querySelector("p.long").innerText = project.longDescription;
+        modalContent.querySelector("p.long").innerHTML = project.longDescription;
     });
 
     // Append short description & button to content
