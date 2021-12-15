@@ -5,7 +5,7 @@ main>article {
 }
 
 main>article>h2 {
-    font-size: 2.4rem;
+    font-size: 3.3rem;
     font-weight: 300;
 }
 
@@ -148,6 +148,15 @@ main>article>h2 {
 #about .container {
     display: flex;
     flex-flow: row wrap;
+}
+
+#about .container section {
+    width: 50%;
+}
+
+#about .container section img {
+    max-width: 100%;
+    border-radius: 62% 38% 30% 70% / 54% 49% 51% 46%;
 }
 
 

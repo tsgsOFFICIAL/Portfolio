@@ -20,9 +20,7 @@ a {
 
 /* Remove all margins and paddings, Remove blue highlight on mobile & Change the default font-family & color */
 
-*,
-*::after,
-*::before {
+*, *::after, *::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -184,8 +182,7 @@ footer {
     flex-direction: column;
 }
 
-#cookie-banner section h3,
-#cookie-banner section p {
+#cookie-banner section h3, #cookie-banner section p {
     width: 100%;
 }
 
@@ -203,8 +200,7 @@ footer {
     justify-content: space-between;
 }
 
-#cookie-banner section button,
-#cookie-banner section.action a {
+#cookie-banner section button, #cookie-banner section.action a {
     border: none;
     border-radius: 5px;
     padding: 10px 30px;
@@ -233,8 +229,7 @@ footer {
     background: var(--success-color);
 }
 
-#cookie-banner section button:hover,
-#cookie-banner section.action a:hover {
+#cookie-banner section button:hover, #cookie-banner section.action a:hover {
     filter: opacity(.75);
     transform: scale(.9);
 }
@@ -252,7 +247,7 @@ header {
 }
 
 header h1 {
-    font-size: 4.6rem;
+    font-size: 5.2rem;
     font-weight: 700;
     color: var(--primary-text-color);
 }
