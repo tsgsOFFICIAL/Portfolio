@@ -22,7 +22,7 @@ main>article>h2 {
     flex-flow: row wrap;
     gap: var(--gap);
     min-height: 50%;
-    margin-top: calc(var(--height) / 2);
+    margin: calc(var(--height) / 2) 0;
 }
 
 .container .card {
