@@ -151,6 +151,9 @@ main>article>h2 {
 }
 
 #about .container section {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 25px;
     width: 50%;
 }
 
