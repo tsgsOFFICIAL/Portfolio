@@ -125,7 +125,7 @@ projectArray.push(new Project(
     "CSS Credit Card",
     "/img/projects/css-credit-card/card.png",
     "Short description of CSS Credit Card",
-    "Check out my <a href=\"https://cdpn.io/tsgsOFFICIAL/debug/eYEeGXa/GnAnbXPpPymA\" target=\"_blank\" class=\"underline hover from-middle\">CSS Credit Card</a> on CodePen",
+    "Check out my <a href=\"https://cdpn.io/tsgsOFFICIAL/full/eYEeGXa/GnAnbXPpPymA\" target=\"_blank\" class=\"underline hover from-middle\">CSS Credit Card</a> on CodePen",
     "",
     "",
     new Date("2 Nov 2020")
