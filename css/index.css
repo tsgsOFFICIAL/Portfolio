@@ -1,3 +1,5 @@
+/* General styles */
+
 main>article {
     min-height: 100vh;
     margin-left: 5%;
@@ -7,6 +9,20 @@ main>article {
 main>article>h2 {
     font-size: 3.3rem;
     font-weight: 300;
+}
+
+ul {
+    list-style: none;
+}
+
+ul.strike.before li {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1rem;
+}
+
+ul.strike.before li::before {
+    content: "-";
 }
 
 
@@ -38,9 +54,6 @@ main>article>h2 {
     height: 100%;
     transition: .5s ease;
 }
-
-
-/* General styles */
 
 #projects .container .card .content {
     height: 100%;
@@ -93,7 +106,8 @@ main>article>h2 {
     justify-content: space-between;
 }
 
-#projects .container .card .bottom .content p, #projects .container .card .bottom .content button {
+#projects .container .card .bottom .content p,
+#projects .container .card .bottom .content button {
     color: var(--text-color);
 }
 
@@ -153,13 +167,67 @@ main>article>h2 {
 #about .container section {
     display: flex;
     flex-flow: column nowrap;
-    gap: 25px;
+    gap: 1.5rem;
     width: 50%;
 }
 
 #about .container section img {
-    max-width: 100%;
+    max-width: 90%;
     border-radius: 62% 38% 30% 70% / 54% 49% 51% 46%;
+}
+
+
+/* Contact section */
+
+#contact form {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1rem;
+    padding: 1rem;
+    border: 1px solid red;
+    height: 80vh;
+}
+
+#contact form .form-content {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 3rem;
+}
+
+#contact img {
+    max-height: 75%;
+    border-radius: 53% 24% 51% 90% / 87% 11% 100% 17%;
+}
+
+#contact form .form-group {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+#contact form textarea,
+#contact form input,
+#contact form button {
+    padding: .5rem;
+    border: none;
+    border-radius: .2rem;
+    color: black;
+    font-size: 1.4rem;
+}
+
+#contact form textarea {
+    resize: none;
+}
+
+#contact form button {
+    align-self: flex-start;
+    padding: 1rem 3rem;
+    cursor: pointer;
+}
+
+#contact form button:disabled {
+    cursor: not-allowed;
 }
 
 
@@ -204,6 +272,7 @@ main>article>h2 {
     align-items: center;
     font-size: 3.4rem;
     font-weight: 500;
+    gap: 2rem;
 }
 
 .modal .header .animatedIcon {
@@ -233,6 +302,7 @@ main>article>h2 {
     max-width: 90%;
     max-height: 100%;
     overflow-y: auto;
+    padding-bottom: 3rem;
 }
 
 .modal .content div {

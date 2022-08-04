@@ -8,6 +8,13 @@ a:link {
     text-decoration: underline;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5vw;
+    max-width: 90vw;
+}
+
 article {
     display: flex;
     flex-direction: column;
