@@ -185,7 +185,7 @@ ul.strike.before li::before {
     justify-content: space-between;
     border-radius: 1rem;
     padding: 1rem;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 80vh;
 }
 
