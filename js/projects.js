@@ -26,7 +26,7 @@ projectArray.push(new Project(
     "Touch Portal Plugin Helper",
     "/img/projects/tpph/touch-portal.png",
     "TPPH (Touch Portal Plugin Helper) is a WPF application, made to ease the process of creating a plugin for TouchPortal, a mobile app that lets you control your desktop software and machine remotely from your mobile phone.",
-    "The project started back in 2019, but was first introduced in 2020, when I asked to develop plugins for the guys running Touch-Portal, over on their Discord server. I had some ideas to improve their app, and they already supported plugins to extend the functionality of the app. However, the process of making said plugin, was a bit of a hassle, as you had to create a 'entry.tp' file, which was their version of a JSON structured file. The application's (TPPH) purpose is to ease the process of creating said file, by making a GUI, that's easy & intuitive to use.",
+    "The project started back in 2019, but was first introduced in 2020, when I asked to develop plugins for the guys running Touch-Portal, over on their Discord server. I had some ideas to improve their app, and they already supported plugins to extend the functionality of the app. However, the process of making said plugins, was a bit of a hassle, as you had to create an 'entry.tp' file, which was their version of a JSON structured file. The application's (TPPH) purpose is to ease the process of creating said file, by making a GUI, that's easy & intuitive to use.",
     "/img/projects/tpph/screenshot.png",
     "/img/projects/tpph/touch-portal.gif",
     new Date("15 Aug 2020"),
@@ -48,7 +48,7 @@ projectArray.push(new Project(
     "CloudKey",
     "/img/projects/cloudkey/cloudkey.png",
     "CloudKey is a security focused password manager, first introduced as a web project with a simple database, later 'upgraded' to include a browser extension for all modern browsers, including Chrome, Opera, Firefox & Edge, to name a few.",
-    "Would you trust others to keep you secure? I don't entirely, and that's why I created my own security focused password manager.",
+    "Would you trust big corporations to keep you safe & secure online? I don't entirely, and that's why I created my own security focused password manager.",
     "/img/projects/cloudkey/screenshot.png",
     "",
     new Date("22 Mar 2021"),
@@ -79,7 +79,7 @@ projectArray.push(new Project(
     "CS:GO Bomb",
     "/img/projects/csgo-bomb/bomb.png",
     "I made the bomb from Counter Strike! As a school project, NO explosives ~_~",
-    "In class, as a project, we got to work on a project that we chose.<br>Only requirement: Include Arduino (Embedded micro controller).<br>So I wanted to replicate the bomb from CS:GO in real life, no explosives, of course!<br>I built a shell out of cardboard, cut holes for a screen and the wires necessary to run the numpad, I installed the parts, wired it up & programmed it all using C++.<br>For my presentation, I also had a simple console application on Windows, used to play sounds as it recieved specific signals over a serial connection. It can be found <a href=\"https://github.com/tsgsOFFICIAL/ArduinoBombSerialConnection\" class=\"underline hover from-left\" target=\"_blank\">here</a>.",
+    "In class, as a project, we got to work on a project that we chose.<br>Only requirement: Include Arduino (Embedded micro controller).<br>So I wanted to replicate the bomb from CS:GO in real life, no explosives, of course!<br>I built a shell out of cardboard, cut holes for the screen and the wires necessary to run the numpad, I installed the parts, wired it up & programmed it all using C++.<br>For my presentation, I also had a simple console application on Windows, used to play sounds as it recieved specific signals over a serial connection. It can be found <a href=\"https://github.com/tsgsOFFICIAL/ArduinoBombSerialConnection\" class=\"underline hover from-left\" target=\"_blank\">here</a>.",
     "/img/projects/csgo-bomb/bomb.jpg",
     "",
     new Date("17 May 2021"),
@@ -101,7 +101,7 @@ projectArray.push(new Project(
     "Discord Bot",
     "/img/projects/discord-bot/discord.png",
     "I made my first Discord bot back in August 2020. Since then I have made a few silly bots. I also made one for CloudKey!",
-    "I've made several bots for Discord over the time, recently I made one for my class Discord, and is still working on it. It's a simple boat, made to entertain and make it easier to see class related activities.",
+    "I've made several bots for Discord over the time, recently I made one for my class Discord, and is still working on it. It's a simple bot, made to entertain and make it easier to see class related activities.",
     "/img/projects/discord-bot/screen.png",
     "/img/projects/discord-bot/granny.png",
     new Date("9 Feb 2022")
@@ -136,6 +136,39 @@ projectArray.push(new Project(
     "",
     new Date("22 Nov 2021"),
     "https://codepen.io/tsgsOFFICIAL/full/eYEeGXa"
+));
+
+projectArray.push(new Project(
+    "Kilgharrah",
+    "/img/projects/kilgharrah/dragon.png",
+    "Kilgharrah means a dragon in hungarian, and was a team project in school, with some hungarian students as well. It's a game about the solar system, to help children learn in a more entertaining way.",
+    "We were in a group of 5 students, 3 hungarians, and 2 danes.<br>We got the assignment to program/develop a website, or someting similar, that could help children learn about the solar system, and our planets.<br>We had to include some sort of Arduino or Raspberry Pi, so we decided to make a replica of the solar system, with a tiny UFO, all controlled through the Arduino, and the website, sending TCP signals back and forth (WebSocket / TCP Listeners).",
+    "/img/projects/kilgharrah/logo.png",
+    "",
+    new Date("30 Mar 2022"),
+    "https://github.com/tsgsOFFICIAL/Kilgharrah"
+));
+
+projectArray.push(new Project(
+    "raavarerne",
+    "/img/projects/raavarerne/logo.png",
+    "Raavarerne is a Progressive Web App (PWA), that can help you cut down on your CO<sup>2</sup> usage.",
+    "Raavarene is made with Angular as a front-end framework, and PWA technology, to have better smartphone support, both iOS and Android.",
+    "/img/projects/raavarerne/screen.jpg",
+    "",
+    new Date("01 Jul 2022"),
+    "https://raavarerne.dk/"
+));
+
+projectArray.push(new Project(
+    "My Portfolio",
+    "/img/selfie_rounded.png",
+    "Obviously I made this portfolio, and I'm actually quite proud of it! It shows some of my work, and accomplishments!",
+    "I made this portfolio to increase my chances of landing a job in tech, and possible as a developer (Score!).<br>It all worked out, as I know work for a Danish company as a software developer.<br>It's available on Github!",
+    "/img/selfie.png",
+    "",
+    new Date("5 Dec 2021"),
+    "https://github.com/tsgsOFFICIAL/Portfolio"
 ));
 
 
@@ -192,7 +225,7 @@ projectArray.forEach((project) => {
 
     // Create short description
     const shortDescription = document.createElement("p");
-    shortDescription.innerText = project.shortDescription;
+    shortDescription.innerHTML = project.shortDescription;
 
     // Create read more button
     const readMore = document.createElement("button");

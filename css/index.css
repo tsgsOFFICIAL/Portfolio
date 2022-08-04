@@ -106,8 +106,7 @@ ul.strike.before li::before {
     justify-content: space-between;
 }
 
-#projects .container .card .bottom .content p,
-#projects .container .card .bottom .content button {
+#projects .container .card .bottom .content * {
     color: var(--text-color);
 }
 
