@@ -18,9 +18,9 @@ function changeActiveLink(e) {
 }
 
 
-window.addEventListener('load', CheckHash);
+window.addEventListener('load', Setup);
 
-function CheckHash() {
+function Setup() {
     if (location.hash.includes('#')) {
         const activeLinkName = location.hash.substring(1);
 
@@ -34,4 +34,7 @@ function CheckHash() {
     } else {
         navLinks[0].className = "underline gradient";
     }
+
+    // Change current year
+    document.getElementById("currentYear").innerText = new Date().getFullYear();
 }
