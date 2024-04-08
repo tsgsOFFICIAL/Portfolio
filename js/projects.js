@@ -24,21 +24,21 @@ const projectArray = new Array();
 
 projectArray.push(new Project(
     "Touch Portal Plugin Helper",
-    "/img/projects/tpph/touch-portal.png",
+    "./img/projects/tpph/touch-portal.png",
     "TPPH (Touch Portal Plugin Helper) is a WPF application, made to ease the process of creating a plugin for TouchPortal, a mobile app that lets you control your desktop software and machine remotely from your mobile phone.",
     "The project started back in 2019, but was first introduced in 2020, when I asked to develop plugins for the guys running Touch-Portal, over on their Discord server. I had some ideas to improve their app, and they already supported plugins to extend the functionality of the app. However, the process of making said plugins, was a bit of a hassle, as you had to create an 'entry.tp' file, which was their version of a JSON structured file. The application's (TPPH) purpose is to ease the process of creating said file, by making a GUI, that's easy & intuitive to use.",
-    "/img/projects/tpph/screenshot.png",
-    "/img/projects/tpph/touch-portal.gif",
+    "./img/projects/tpph/screenshot.png",
+    "./img/projects/tpph/touch-portal.gif",
     new Date("15 Aug 2020"),
     "https://github.com/tsgsOFFICIAL/TouchPortal-Plugin-Helper"
 ));
 
 projectArray.push(new Project(
     "PUBG Live Stats Tracker",
-    "/img/projects/pubg-live-stats-tracker/helmet.png",
+    "./img/projects/pubg-live-stats-tracker/helmet.png",
     "The goal is simple: Take a screencapture, store it in its memory and then read the text on said screencapture by using an OCR engine, aswell as uploading the results in real-time to make live statistics available.",
     "PUBG Live Stats Tracker is a .NET framework project. I made it when I was streaming on twitch, and wanted my statistics online, live. It's a simple application, the real beauty is fine tuning the OCR to get better results, no matter the input.",
-    "/img/projects/pubg-live-stats-tracker/screenshot.png",
+    "./img/projects/pubg-live-stats-tracker/screenshot.png",
     "",
     new Date("19 Aug 2020"),
     "https://github.com/tsgsOFFICIAL/PUBG-Live-stats"
@@ -46,10 +46,10 @@ projectArray.push(new Project(
 
 projectArray.push(new Project(
     "CloudKey",
-    "/img/projects/cloudkey/cloudkey.png",
+    "./img/projects/cloudkey/cloudkey.png",
     "CloudKey is a security focused password manager, first introduced as a web project with a simple database, later 'upgraded' to include a browser extension for all modern browsers, including Chrome, Opera, Firefox & Edge, to name a few.",
     "Would you trust big corporations to keep you safe & secure online? I don't entirely, and that's why I created my own security focused password manager.",
-    "/img/projects/cloudkey/screenshot.png",
+    "./img/projects/cloudkey/screenshot.png",
     "",
     new Date("22 Mar 2021"),
     "https://cloudkey.live"
@@ -57,30 +57,30 @@ projectArray.push(new Project(
 
 projectArray.push(new Project(
     "RAT",
-    "/img/projects/rat/rat.png",
+    "./img/projects/rat/rat.png",
     "I built my own Remote Access Trojan (RAT), to prank my friends, when they left their pc's unattended. No harm was done, and the code is private to make it stay that way.",
     "Have you ever wanted to prank your friends, by blasting loud music or other sounds? ( ͡~ ͜ʖ ͡°)<br>I have, and so I did, I created my own RAT to prank my friends, when they left their pc's unattended.<br>It's harmless, in the way that I also had full control over updating the RAT from my own server, and had the ability to remove it completely without accessing the pc.<br>This made for a great prank on some of my friends & fellow students, when suddenly their pc would start \"talking\" to them, or taking control over their cursor.. ¯\\_(ツ)_/¯<br>In the end, it was uninstalled from all that had been affected by it, and the project was put down. To avoid any malicious actions I also privated the code on Github, where it still remains.",
-    "/img/projects/rat/code.png",
+    "./img/projects/rat/code.png",
     "",
     new Date("1 Sep 2020")
 ));
 
 projectArray.push(new Project(
     "Webshop",
-    "/img/projects/webshop/webshop.png",
+    "./img/projects/webshop/webshop.png",
     "A webshop I made for a customer, using Umbraco, all private information is either censored or removed completely.",
     "I made this webshop for a customer, where I used to work, all private information is either censored or removed completely.<br>It's built with plain HTML, CSS & JS, and made easy to manage with Umbraco CMS.",
-    "/img/projects/webshop/screenshot.png",
+    "./img/projects/webshop/screenshot.png",
     "",
     new Date("19 Oct 2021")
 ));
 
 projectArray.push(new Project(
     "CS:GO Bomb",
-    "/img/projects/csgo-bomb/bomb.png",
+    "./img/projects/csgo-bomb/bomb.png",
     "I made the bomb from Counter Strike! As a school project, NO explosives ~_~",
     "In class, as a project, we got to work on a project that we chose.<br>Only requirement: Include Arduino (Embedded micro controller).<br>So I wanted to replicate the bomb from CS:GO in real life, no explosives, of course!<br>I built a shell out of cardboard, cut holes for the screen and the wires necessary to run the numpad, I installed the parts, wired it up & programmed it all using C++.<br>For my presentation, I also had a simple console application on Windows, used to play sounds as it recieved specific signals over a serial connection. It can be found <a href=\"https://github.com/tsgsOFFICIAL/ArduinoBombSerialConnection\" class=\"underline hover from-left\" target=\"_blank\">here</a>.",
-    "/img/projects/csgo-bomb/bomb.jpg",
+    "./img/projects/csgo-bomb/bomb.jpg",
     "",
     new Date("17 May 2021"),
     "https://github.com/tsgsOFFICIAL/csgo-bomb-arduino"
@@ -88,10 +88,10 @@ projectArray.push(new Project(
 
 projectArray.push(new Project(
     "CS:GO Auto Accept",
-    "/img/projects/csgo-auto-accept/csgo.png",
+    "./img/projects/csgo-auto-accept/csgo.png",
     "Using my previous experience with capturing the screen & reading it using OCR, I made a console application that automatically accepts a match found in Counter Strike.",
     "In Counter Strike, you \"queue up\" for a match, when one is found, you hear a beeping sound in your ears, and then you have to look over, move your cursor over the \"ACCEPT\" button, and press it.<br>This got boring really quick, and using my previous experience with screen capturing & optical character recognition (OCR), I quickyl made a console application, that performs this very tedious task for me!<br>Now I can finally lean back, and WAIT. I still hear the sound, and thats my clue to start. I don't have to hurry, I don't have to do anything! And isn't that the beauty of it, being lazy, coming up with solutions to problems as you encounter them? I think so!",
-    "/img/projects/csgo-auto-accept/screen.png",
+    "./img/projects/csgo-auto-accept/screen.png",
     "",
     new Date("16 May 2021"),
     "https://github.com/tsgsOFFICIAL/CS_AUTO_ACCEPT_CONSOLE"
@@ -99,40 +99,40 @@ projectArray.push(new Project(
 
 projectArray.push(new Project(
     "Discord Bot",
-    "/img/projects/discord-bot/discord.png",
+    "./img/projects/discord-bot/discord.png",
     "I made my first Discord bot back in August 2020. Since then I have made a few silly bots. I also made one for CloudKey!",
     "I've made several bots for Discord over the time, recently I made one for my class Discord, and is still working on it. It's a simple bot, made to entertain and make it easier to see class related activities.",
-    "/img/projects/discord-bot/screen.png",
-    "/img/projects/discord-bot/granny.png",
+    "./img/projects/discord-bot/screen.png",
+    "./img/projects/discord-bot/granny.png",
     new Date("9 Feb 2022")
 ));
 
 projectArray.push(new Project(
     "Twitch Bot",
-    "/img/projects/twitch-bot/twitch.png",
+    "./img/projects/twitch-bot/twitch.png",
     "I made a Twitch bot along with my PUBG Live Stats Tracker, the bots goal is simple, collect the data from the tracker, and show it when someone issues a specific set of commands.",
     "Here is a short demonstration of how it worked, it's been taken down for now, as I no longer play games, and I also don't stream on Twitch anymore. Lack of time, simply put. Maybe I'll be back? <a href=\"https://twitch.tv/tsgsOFFICIAL\" target=\"_blank\" class=\"underline hover from-left\">My Twitch</a> is still up ^_^",
-    "/img/projects/twitch-bot/demo.gif",
-    "/img/projects/twitch-bot/twitch.gif",
+    "./img/projects/twitch-bot/demo.gif",
+    "./img/projects/twitch-bot/twitch.gif",
     new Date("13 May 2020")
 ));
 
 projectArray.push(new Project(
     "Keylogger",
-    "/img/projects/keylogger/keylogger.png",
+    "./img/projects/keylogger/keylogger.png",
     "Along with a RAT, I also made my own keylogger, this was never shared to anyone, and was only for personal use/training. No harm was done, and the code is private to make it stay that way.",
     "I programmed a keylogger in C#, because it's just one of those things I've always wanted to program, or atleast attempt. This was never a malicious activity, and is kept private to stay that way. I have no intentions of sharing the code with bad people. It was just a personal challenge of mine.",
-    "/img/projects/keylogger/code.png",
-    "/img/projects/keylogger/icon.gif",
+    "./img/projects/keylogger/code.png",
+    "./img/projects/keylogger/icon.gif",
     new Date("18 Oct 2020")
 ));
 
 projectArray.push(new Project(
     "CSS Credit Card",
-    "/img/projects/css-credit-card/card.png",
+    "./img/projects/css-credit-card/card.png",
     "Front-end design of a credit card, all in pure CSS, no SASS, SCSS, etc.",
     "I made this front-end design of a credit card for CloudKey, as it can also store credit cards, and I like to make everything myself.",
-    "/img/projects/css-credit-card/card.gif",
+    "./img/projects/css-credit-card/card.gif",
     "",
     new Date("22 Nov 2021"),
     "https://codepen.io/tsgsOFFICIAL/full/eYEeGXa"
@@ -140,10 +140,10 @@ projectArray.push(new Project(
 
 projectArray.push(new Project(
     "Kilgharrah",
-    "/img/projects/kilgharrah/dragon.png",
+    "./img/projects/kilgharrah/dragon.png",
     "Kilgharrah means a dragon in hungarian, and was a team project in school, with some hungarian students as well. It's a game about the solar system, to help children learn in a more entertaining way.",
     "We were in a group of 5 students, 3 hungarians, and 2 danes.<br>We got the assignment to program/develop a website, or someting similar, that could help children learn about the solar system, and our planets.<br>We had to include some sort of Arduino or Raspberry Pi, so we decided to make a replica of the solar system, with a tiny UFO, all controlled through the Arduino, and the website, sending TCP signals back and forth (WebSocket / TCP Listeners).",
-    "/img/projects/kilgharrah/logo.png",
+    "./img/projects/kilgharrah/logo.png",
     "",
     new Date("30 Mar 2022"),
     "https://github.com/tsgsOFFICIAL/Kilgharrah"
@@ -151,10 +151,10 @@ projectArray.push(new Project(
 
 projectArray.push(new Project(
     "raavarerne",
-    "/img/projects/raavarerne/logo.png",
+    "./img/projects/raavarerne/logo.png",
     "Raavarerne is a Progressive Web App (PWA), that can help you cut down on your CO<sup>2</sup> usage.",
     "Raavarene is made with Angular as a front-end framework, and PWA technology, to have better smartphone support, both iOS and Android.",
-    "/img/projects/raavarerne/screen.jpg",
+    "./img/projects/raavarerne/screen.jpg",
     "",
     new Date("01 Jul 2022"),
     "https://raavarerne.dk/"
@@ -162,10 +162,10 @@ projectArray.push(new Project(
 
 projectArray.push(new Project(
     "My Portfolio",
-    "/img/selfie_rounded.png",
+    "./img/selfie_rounded.png",
     "Obviously I made this portfolio, and I'm actually quite proud of it! It shows some of my work, and accomplishments!",
     "I made this portfolio to increase my chances of landing a job in tech, and possible as a developer (Score!).<br>It all worked out, as I know work for a Danish company as a software developer.<br>It's available on Github!",
-    "/img/selfie.png",
+    "./img/selfie.png",
     "",
     new Date("5 Dec 2021"),
     "https://github.com/tsgsOFFICIAL/Portfolio"
