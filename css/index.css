@@ -27,24 +27,27 @@ ul.strike.before li::before {
 
 
 /* Project section */
-
-#projects .container {
+#projects {
     --text-color: #222526;
     --hover-color: var(--primary-color);
-    --gap: 30px;
+    --gap: 25px;
     --height: 200px;
+    margin-top: calc(var(--height) / 8);
+}
+
+#projects .container {
     position: relative;
     display: flex;
     flex-flow: row wrap;
     gap: var(--gap);
     min-height: 50%;
-    margin: calc(var(--height) / 2) 0;
+    margin: calc(var(--height) / 8) 0 calc(var(--height) / 2) 0;
 }
 
 #projects .container .card {
     position: relative;
-    min-width: 300px;
-    max-width: 10%;
+    min-width: 350px;
+    max-width: 20%;
     height: var(--height);
     margin-bottom: calc(var(--height) / 2 - var(--gap));
 }
