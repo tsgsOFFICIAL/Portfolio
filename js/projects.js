@@ -11,17 +11,13 @@ class Project {
         this.modalIcon = modalIcon;
         this.date = date;
         this.url = url;
-
-        // Methods
-        // This is just an example, doesn't actually do anything
-        // this.sort = (property, direction) => {
-        //     projectArray.sort(CompareFunction(property, direction));
-        // };
     }
 }
 
 const projectArray = new Array();
+let sortDir = 'desc';
 
+//#region Projects
 projectArray.push(new Project(
     "Touch Portal Plugin Helper",
     "./img/projects/tpph/touch-portal.png",
@@ -171,110 +167,19 @@ projectArray.push(new Project(
     "https://github.com/tsgsOFFICIAL/Portfolio"
 ));
 
+//#endregion
+
 const projects = document.getElementById("projects");
 const projectsContainer = projects.querySelector("section.container");
 const modal = document.getElementById("project-modal");
 const modal_close_btn = document.getElementById("project-modal-close-btn");
+const sorting_btn = document.querySelector("#sorting-btn");
 
 // Sort the array, show the newest projects first
-projectArray.sort(CompareFunction('date', 'desc'));
+projectArray.sort(CompareFunction('date', sortDir));
 
 // Add every project to the HTML
-projectArray.forEach((project) => {
-    // Create card
-    const card = document.createElement("article");
-    card.className = "card";
-
-    // Create top section
-    const top = document.createElement("section");
-    top.className = "top";
-
-    // Create content
-    let content = document.createElement("div");
-    content.className = "content";
-
-    // Create img
-    let img = document.createElement("img");
-    img.src = project.cardImg != "" ? project.cardImg != null ? project.cardImg : "https://via.placeholder.com/150/000/FFF/?text=Project" : "https://via.placeholder.com/150/000/FFF/?text=Project";
-    img.alt = `${project.name}`;
-
-    // Create name
-    let name = document.createElement("h3");
-    name.innerText = project.name;
-    name.className = "overflow-dots";
-
-    // Append img & name to content
-    content.appendChild(img);
-    content.appendChild(name);
-
-    // Append content to top section
-    top.appendChild(content);
-
-    // Append top section to the card
-    card.appendChild(top);
-
-    // Create bottom section
-    const bottom = document.createElement("section");
-    bottom.className = "bottom";
-
-    // Edit content
-    content = document.createElement("div");
-    content.className = "content";
-
-    // Create short description
-    const shortDescription = document.createElement("p");
-    shortDescription.innerHTML = project.shortDescription;
-
-    // Create read more button
-    const readMore = document.createElement("button");
-    readMore.type = "button";
-    readMore.innerText = `Read more`;
-    readMore.title = `Click here to read more about ${project.name}`;
-    readMore.addEventListener("click", () => {
-        document.querySelector("body").style.overflow = "hidden"; // Disable scroll on the body
-        modal.classList.add("open");
-
-        const modalHeader = modal.querySelector(".header h3");
-
-        modalHeader.querySelector(".animatedIcon").src = `${project.modalIcon == "" ? project.cardImg : project.modalIcon}`;
-        modalHeader.querySelector("span").innerText = project.name;
-
-        const modalContent = modal.querySelector(".content");
-
-        // modalContent.style.backgroundImage = `url("${project.modalImg}")`;
-        // modalContent.style.backgroundRepeat = "no-repeat";
-        // modalContent.style.backgroundPosition = "center";
-        modalContent.querySelector("p.date").innerText = `Date: ${project.date.getDate()}/${project.date.getMonth() + 1}/${project.date.getFullYear()}`;
-        // modalContent.querySelector("p.short").innerText = project.shortDescription;
-        modalContent.querySelector("img.screenshot").src = project.modalScreenshot;
-        modalContent.querySelector("img.screenshot").alt = `Screenshot from ${project.name}`;
-        modalContent.querySelector("img.screenshot").title = `${project.name}`;
-        modalContent.querySelector("p.long").innerHTML = project.longDescription;
-        if (project.url) {
-            modalContent.querySelector("a.codeUrl").classList.add("underline");
-            modalContent.querySelector("a.codeUrl").classList.add("hover");
-            modalContent.querySelector("a.codeUrl").classList.add("from-left");
-            modalContent.querySelector("a.codeUrl").href = project.url;
-            modalContent.querySelector("a.codeUrl").innerHTML = "See the project here";
-        } else {
-            modalContent.querySelector("a.codeUrl").innerHTML = "This project doesn't have a URL yet, or maybe it's private.";
-            modalContent.querySelector("a.codeUrl").removeAttribute("href");
-            modalContent.querySelector("a.codeUrl").className = "codeUrl";
-        }
-    });
-
-    // Append short description & button to content
-    content.appendChild(shortDescription);
-    content.appendChild(readMore);
-
-    // Append content to bottom section
-    bottom.appendChild(content);
-
-    // Append bottom section to the card
-    card.appendChild(bottom);
-
-    projectsContainer.appendChild(card);
-});
+updateProjects();
 
 modal_close_btn.addEventListener("click", () => {
     modal.classList.add("closing");
@@ -284,6 +189,14 @@ modal_close_btn.addEventListener("click", () => {
     modal.addEventListener("animationend", animationEnd);
 });
 
+sorting_btn.addEventListener('click', () => {
+    sortDir = sortDir === 'asc' ? 'desc' : 'asc';
+    sorting_btn.innerText = `Sort by date ${sortDir === 'asc' ? '↑' : '↓'}`;
+
+    projectArray.sort(CompareFunction('date', sortDir));
+    updateProjects();
+});
+
 // Functions
 
 function animationEnd() {
@@ -291,6 +204,106 @@ function animationEnd() {
     modal.classList.remove("closing");
 
     modal.removeEventListener("animationend", animationEnd);
+}
+
+function updateProjects() {
+    projectsContainer.innerHTML = "";
+    projectArray.forEach((project) => {
+        // Create card
+        const card = document.createElement("article");
+        card.className = "card";
+
+        // Create top section
+        const top = document.createElement("section");
+        top.className = "top";
+
+        // Create content
+        let content = document.createElement("div");
+        content.className = "content";
+
+        // Create img
+        let img = document.createElement("img");
+        img.src = project.cardImg != "" ? project.cardImg != null ? project.cardImg : "https://via.placeholder.com/150/000/FFF/?text=Project" : "https://via.placeholder.com/150/000/FFF/?text=Project";
+        img.alt = `${project.name}`;
+
+        // Create name
+        let name = document.createElement("h3");
+        name.innerText = project.name;
+        name.className = "overflow-dots";
+
+        // Append img & name to content
+        content.appendChild(img);
+        content.appendChild(name);
+
+        // Append content to top section
+        top.appendChild(content);
+
+        // Append top section to the card
+        card.appendChild(top);
+
+        // Create bottom section
+        const bottom = document.createElement("section");
+        bottom.className = "bottom";
+
+        // Edit content
+        content = document.createElement("div");
+        content.className = "content";
+
+        // Create short description
+        const shortDescription = document.createElement("p");
+        shortDescription.innerHTML = project.shortDescription;
+
+        // Create read more button
+        const readMore = document.createElement("button");
+        readMore.type = "button";
+        readMore.innerText = `Read more`;
+        readMore.title = `Click here to read more about ${project.name}`;
+        readMore.addEventListener("click", () => {
+            document.querySelector("body").style.overflow = "hidden"; // Disable scroll on the body
+            modal.classList.add("open");
+
+            const modalHeader = modal.querySelector(".header h3");
+
+            modalHeader.querySelector(".animatedIcon").src = `${project.modalIcon == "" ? project.cardImg : project.modalIcon}`;
+            modalHeader.querySelector("span").innerText = project.name;
+
+            const modalContent = modal.querySelector(".content");
+
+            // modalContent.style.backgroundImage = `url("${project.modalImg}")`;
+            // modalContent.style.backgroundRepeat = "no-repeat";
+            // modalContent.style.backgroundPosition = "center";
+            modalContent.querySelector("p.date").innerText = `Date: ${project.date.getDate()}/${project.date.getMonth() + 1}/${project.date.getFullYear()}`;
+            // modalContent.querySelector("p.short").innerText = project.shortDescription;
+            modalContent.querySelector("img.screenshot").src = project.modalScreenshot;
+            modalContent.querySelector("img.screenshot").alt = `Screenshot from ${project.name}`;
+            modalContent.querySelector("img.screenshot").title = `${project.name}`;
+            modalContent.querySelector("p.long").innerHTML = project.longDescription;
+
+            if (project.url) {
+                modalContent.querySelector("a.codeUrl").classList.add("underline");
+                modalContent.querySelector("a.codeUrl").classList.add("hover");
+                modalContent.querySelector("a.codeUrl").classList.add("from-left");
+                modalContent.querySelector("a.codeUrl").href = project.url;
+                modalContent.querySelector("a.codeUrl").innerHTML = "See the project here";
+            } else {
+                modalContent.querySelector("a.codeUrl").innerHTML = "This project doesn't have a URL yet, or maybe it's private.";
+                modalContent.querySelector("a.codeUrl").removeAttribute("href");
+                modalContent.querySelector("a.codeUrl").className = "codeUrl";
+            }
+        });
+
+        // Append short description & button to content
+        content.appendChild(shortDescription);
+        content.appendChild(readMore);
+
+        // Append content to bottom section
+        bottom.appendChild(content);
+
+        // Append bottom section to the card
+        card.appendChild(bottom);
+
+        projectsContainer.appendChild(card);
+    });
 }
 
 /*

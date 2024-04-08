@@ -63,7 +63,10 @@
 
         <main>
             <article id="projects">
-                <h2>Some of my work</h2>
+                <section class="row">
+                    <h2>Some of my work</h2>
+                    <button id="sorting-btn" type="button">Sort by date ↓</button>
+                </section>
 
                 <section class="container">
                 </section>
@@ -128,65 +131,37 @@
             </article>
 
             <article id="contact">
-                <h2>Get in touch!</h2>
+                <section style="position: relative;">
+                    <h2>Send me a letter!</h2>
 
-                <small>Enter message (optional) and click button "Send"</small>
-                <div class="wrapper centered">
                     <article class="letter">
                         <div class="side">
                             <h1>Contact us</h1>
-                            <p>
-                                <textarea placeholder="Your message" required></textarea>
-                            </p>
+                            <br>
+                            <textarea placeholder="Your message" required=""></textarea>
                         </div>
                         <div class="side">
-                            <p>
-                                <input type="text" placeholder="Your name">
-                            </p>
-                            <p>
-                                <input type="email" placeholder="Your email">
-                            </p>
-                            <p>
-                                <button id="sendLetter">Send</button>
-                            </p>
+                            <br>
+                            <input type="text" placeholder="Your name">
+
+                            <br>
+                            <input type="email" placeholder="Your email">
+
+                            <br>
+                            <button id="sendLetter">Send</button>
+
                         </div>
                     </article>
                     <div class="envelope front"></div>
                     <div class="envelope back"></div>
-                </div>
+                </section>
+
                 <p class="result-message centered">Thank you for your message</p>
-                <!-- <form action="#" method="post" autocomplete="off">
-                    <span class="form-content">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" name="name" id="name" placeholder="Marcus Jensen">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" name="email" id="email" placeholder="marcus@tsgsdev.com">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea type="text" name="message" id="message" cols="75" rows="9" placeholder="Hi Marcus..."></textarea>
-                        </div>
-
-                        <button type="button" name="submit" id="submit" disabled title="Shoot me an email instead!">Send message</button>
-                        <a href="mailto:marcusproman0507@gmail.com" class="underline">Shoot me an email instead!</a>
-                    </span>
-
-                    <img src="img/mirror.png" alt="Picture of me" title="This is me" /> -->
-                <!-- <label for="select_action">What are you interested in?</label>
-                <select name="action" id="select_action">
-                    <option value="value">value</option>
-                </select> -->
-                </form>
             </article>
         </main>
 
         <footer>
-            <h2>&copy; 2020 - <span id="currentYear">2020</span> <a class="underline hover from-middle" href="./" target="_self">Marcus Jensen</a>, All Rights Reserved.</h2>
+            <h2>&copy; 2020 - <span id="currentYear">xxxx</span> <a class="underline hover from-middle" href="./" target="_self">Marcus Jensen</a>, All Rights Reserved.</h2>
         </footer>
     </body>
 

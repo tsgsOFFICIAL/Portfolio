@@ -1,7 +1,7 @@
 /* General styles */
 
 main>article {
-    min-height: 100vh;
+    min-height: 75vh;
     margin-left: 5%;
     max-width: 90%;
 }
@@ -35,13 +35,31 @@ ul.strike.before li::before {
     margin-top: calc(var(--height) / 8);
 }
 
+#sorting-btn {
+    padding: .25rem 1rem;
+    border: 1px solid var(--primary-text-color);
+    border-radius: 3px;
+    background-color: transparent;
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: .2s ease;
+    cursor: pointer;
+}
+
+#sorting-btn:hover {
+    color: var(--hover-color);
+    border-color: var(--hover-color);
+}
+
 #projects .container {
     position: relative;
     display: flex;
     flex-flow: row wrap;
     gap: var(--gap);
     min-height: 50%;
-    margin: calc(var(--height) / 8) 0 calc(var(--height) / 2) 0;
+    margin: calc(var(--height) / 2) 0 calc(var(--height) / 2) 0;
 }
 
 #projects .container .card {
@@ -157,6 +175,7 @@ ul.strike.before li::before {
 
 #projects .container .card .bottom .content button:hover {
     color: var(--hover-color);
+    border-color: var(--hover-color);
 }
 
 
