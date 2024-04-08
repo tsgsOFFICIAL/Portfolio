@@ -303,84 +303,84 @@ header ul li a {
 
 @font-face {
     font-family: "OpenSans";
-    src: url("/font/OpenSans-Light.ttf");
+    src: url("./font/OpenSans-Light.ttf");
     font-style: normal;
     font-weight: 300;
 }
 
 @font-face {
     font-family: "OpenSans";
-    src: url("/font/OpenSans-LightItalic.ttf");
+    src: url("./font/OpenSans-LightItalic.ttf");
     font-style: italic;
     font-weight: 300;
 }
 
 @font-face {
     font-family: "OpenSans";
-    src: url("/font/OpenSans-Regular.ttf");
+    src: url("./font/OpenSans-Regular.ttf");
     font-style: normal;
     font-weight: 400;
 }
 
 @font-face {
     font-family: "OpenSans";
-    src: url("/font/OpenSans-Italic.ttf");
+    src: url("./font/OpenSans-Italic.ttf");
     font-style: italic;
     font-weight: 400;
 }
 
 @font-face {
     font-family: "OpenSans";
-    src: url("/font/OpenSans-Medium.ttf");
+    src: url("./font/OpenSans-Medium.ttf");
     font-style: normal;
     font-weight: 500;
 }
 
 @font-face {
     font-family: "OpenSans";
-    src: url("/font/OpenSans-MediumItalic.ttf");
+    src: url("./font/OpenSans-MediumItalic.ttf");
     font-style: italic;
     font-weight: 500;
 }
 
 @font-face {
     font-family: "OpenSans";
-    src: url("/font/OpenSans-SemiBold.ttf");
+    src: url("./font/OpenSans-SemiBold.ttf");
     font-style: normal;
     font-weight: 600;
 }
 
 @font-face {
     font-family: "OpenSans";
-    src: url("/font/OpenSans-SemiBoldItalic.ttf");
+    src: url("./font/OpenSans-SemiBoldItalic.ttf");
     font-style: italic;
     font-weight: 600;
 }
 
 @font-face {
     font-family: "OpenSans";
-    src: url("/font/OpenSans-Bold.ttf");
+    src: url("./font/OpenSans-Bold.ttf");
     font-style: normal;
     font-weight: 700;
 }
 
 @font-face {
     font-family: "OpenSans";
-    src: url("/font/OpenSans-BoldItalic.ttf");
+    src: url("./font/OpenSans-BoldItalic.ttf");
     font-style: italic;
     font-weight: 700;
 }
 
 @font-face {
     font-family: "OpenSans";
-    src: url("/font/OpenSans-ExtraBold.ttf");
+    src: url("./font/OpenSans-ExtraBold.ttf");
     font-style: normal;
     font-weight: 900;
 }
 
 @font-face {
     font-family: "OpenSans";
-    src: url("/font/OpenSans-ExtraBoldItalic.ttf");
+    src: url("./font/OpenSans-ExtraBoldItalic.ttf");
     font-style: italic;
     font-weight: 900;
 }
