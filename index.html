@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+        <title>Marcus Jensen | Portfolio</title>
+        <!-- Meta -->
+        <meta charset="utf-8">
+        <meta name="description" content="Marcus Jensen is a full time nerd, and has a burning passion for both front-end and back-end development">
+        <meta name="robots" content="index, follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Open Graph -->
+        <meta name="og:image" content="/logo.png">
+        <!-- Links -->
+        <link rel="icon" href="/logo.png">
+        <link rel="apple-touch-icon" href="/logo.png">
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/index.css">
+        <link rel="stylesheet" href="/css/contact.css">
+        <script type="text/javascript" src="/js/contact.js" defer></script>
+        <script type="text/javascript" src="/js/cookie.js" defer></script>
+        <script type="text/javascript" src="/js/main.js" defer></script>
+        <script type="text/javascript" src="/js/projects.js" defer></script>
+    </head>
+
+    <body id="home">
+        <header>
+            <h1>Marcus Jensen</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="underline hover from-middle">Home</a></li>
+                    <li><a href="#projects" class="underline hover from-middle">Projects</a></li>
+                    <li><a href="#about" class="underline hover from-middle">About</a></li>
+                    <li><a href="#contact" class="underline hover from-middle">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <article id="cookie-banner" class="cookie-item">
+            <!-- Cookie Header -->
+            <section class="cookie-item header">
+                <h2 class="cookie-item">
+                    <img class="cookie-item" src="/logo.png" alt="Logo" title="Logo">Cookie Notice
+                    <img class="cookie-item rotating" src="/img/cookie.svg" alt="Cookie" title="Cookie">
+                </h2>
+            </section>
+            <!-- Cookie content -->
+            <section class="cookie-item content">
+                <h3 class="cookie-item">Notice</h3>
+                <p class="cookie-item">I use cookies and, or similar technologies as specified in the <a href="/policies#cookie-policy" class="cookie-item underline" title="Learn more about cookies &amp; how I use them">cookie policy</a>.</p>
+                <p class="cookie-item">You can reject or accept the use of such technologies, by clicking the 'Reject' or 'Accept' button.</p>
+                <p class="cookie-item">Interacting with the website in any other way will automatically accept cookies.</p>
+                <p class="cookie-item">Cookie preferences will be saved for a year (365 days).</p>
+            </section>
+            <!-- Cookie actions -->
+            <section class="cookie-item action">
+                <a href="/policies#cookie-policy" id="cookie-learn-more" class="cookie-item" title="Learn more about cookies &amp; how I use them">Learn more</a>
+                <span class="cookie-item btn-group">
+                    <button id="cookie-btn-reject" class="cookie-item" title="Reject cookies for a year&NewLine;This will not allow cookies to be saved to your local device" type="button">Reject</button>
+                    <button id="cookie-btn-accept" class="cookie-item" title="Accept cookies for a year&NewLine;This will allow cookies to be saved to your local device" type="button">Accept</button>
+                </span>
+            </section>
+        </article>
+
+        <main>
+            <article id="projects">
+                <h2>Some of my work</h2>
+                <section class="container">
+                </section>
+
+                <div id="project-modal" class="modal">
+                    <section class="header">
+                        <h3>
+                            <span></span>
+                            <img class="animatedIcon" />
+                        </h3>
+                        <button id="project-modal-close-btn" title="Close" type="button">&times;</button>
+                    </section>
+
+                    <section class="content">
+                        <div>
+                            <p class="date"></p>
+                            <!-- <p class="short"></p> -->
+                            <img class="screenshot" />
+                            <p class="long"></p>
+                            <a class="codeUrl" target="_blank"></a>
+                        </div>
+                    </section>
+                </div>
+            </article>
+
+            <article id="about">
+                <h2>Who am I?</h2>
+
+                <span class="container">
+                    <section>
+                        <p>I'm a programming student, located in Denmark.</p>
+                        <p>
+                            I have a burning passion for programming.
+                            I love doing front-end as well as back-end work, where I focus on everything from intuitive UI & animations, to everything needed to make a great application work & function properly.
+
+                        </p>
+                        <p>In short I am:</p>
+
+                        <ul class="strike before">
+                            <li>Independent</li>
+                            <li>Very structered</li>
+                            <li>Well organised</li>
+                            <li>Very stable</li>
+                            <li>Semi patient</li>
+                            <li>Flexible</li>
+                        </ul>
+
+                        <div>
+                            <h2>Seems interesting?</h2>
+                            <h3>Get in touch!</h3>
+                        </div>
+
+                        <p>
+                            I can do Freelance as well as full-time employment.
+                        </p>
+                    </section>
+
+                    <section>
+                        <img src="img/selfie.png" alt="Picture of me" title="This is me" />
+                    </section>
+                </span>
+            </article>
+
+            <article id="contact">
+                <h2>Get in touch!</h2>
+
+                <small>Enter message (optional) and click button "Send"</small>
+                <div class="wrapper centered">
+                    <article class="letter">
+                        <div class="side">
+                            <h1>Contact us</h1>
+                            <p>
+                                <textarea placeholder="Your message" required></textarea>
+                            </p>
+                        </div>
+                        <div class="side">
+                            <p>
+                                <input type="text" placeholder="Your name">
+                            </p>
+                            <p>
+                                <input type="email" placeholder="Your email">
+                            </p>
+                            <p>
+                                <button id="sendLetter">Send</button>
+                            </p>
+                        </div>
+                    </article>
+                    <div class="envelope front"></div>
+                    <div class="envelope back"></div>
+                </div>
+                <p class="result-message centered">Thank you for your message</p>
+                <!-- <form action="#" method="post" autocomplete="off">
+                    <span class="form-content">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" placeholder="Marcus Jensen">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="marcus@tsgsdev.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea type="text" name="message" id="message" cols="75" rows="9" placeholder="Hi Marcus..."></textarea>
+                        </div>
+
+                        <button type="button" name="submit" id="submit" disabled title="Shoot me an email instead!">Send message</button>
+                        <a href="mailto:marcusproman0507@gmail.com" class="underline">Shoot me an email instead!</a>
+                    </span>
+
+                    <img src="img/mirror.png" alt="Picture of me" title="This is me" /> -->
+                <!-- <label for="select_action">What are you interested in?</label>
+                <select name="action" id="select_action">
+                    <option value="value">value</option>
+                </select> -->
+                </form>
+            </article>
+        </main>
+
+        <footer>
+            <h2>&copy; 2020 - <span id="currentYear">2020</span> <a class="underline hover from-middle" href="/" target="_self">Marcus Jensen</a>, All Rights Reserved.</h2>
+        </footer>
+    </body>
+
+</html>

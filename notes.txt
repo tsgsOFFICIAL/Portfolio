@@ -1,0 +1,7 @@
+Color palette {
+    https://coolors.co/1f2223-8c7051-ef3054-f9a03f-519872-3290ce-23ce6b-fffafa-06d6a0-ff595e
+}
+
+js {
+    ${project.date.getDate()}/${project.date.getMonth() + 1}/${project.date.getFullYear()}
+}

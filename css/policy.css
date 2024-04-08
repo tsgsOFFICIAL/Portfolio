@@ -1,0 +1,38 @@
+/* Change background color when text is selected */
+
+*::selection {
+    background: #6F8AB7;
+}
+
+a:link {
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5vw;
+    max-width: 90vw;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    color: hsla(225, 46%, 35%, 1);
+    font-size: 1.3rem;
+}
+
+h1 {
+    font-size: 2.3rem;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+footer a:link {
+    text-decoration: none;
+}
