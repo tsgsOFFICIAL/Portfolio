@@ -84,13 +84,24 @@ projectArray.push(new Project(
 
 projectArray.push(new Project(
     "CS:GO Auto Accept",
-    "./img/projects/csgo-auto-accept/csgo.png",
+    "./img/projects/csgo-auto-accept-console/csgo.png",
     "Using my previous experience with capturing the screen & reading it using OCR, I made a console application that automatically accepts a match found in Counter Strike.",
     "In Counter Strike, you \"queue up\" for a match, when one is found, you hear a beeping sound in your ears, and then you have to look over, move your cursor over the \"ACCEPT\" button, and press it.<br>This got boring really quick, and using my previous experience with screen capturing & optical character recognition (OCR), I quickyl made a console application, that performs this very tedious task for me!<br>Now I can finally lean back, and WAIT. I still hear the sound, and thats my clue to start. I don't have to hurry, I don't have to do anything! And isn't that the beauty of it, being lazy, coming up with solutions to problems as you encounter them? I think so!",
-    "./img/projects/csgo-auto-accept/screen.png",
+    "./img/projects/csgo-auto-accept-console/screen.png",
     "",
     new Date("16 May 2021"),
     "https://github.com/tsgsOFFICIAL/CS_AUTO_ACCEPT_CONSOLE"
+));
+
+projectArray.push(new Project(
+    "CS2 Auto Accept",
+    "./img/projects/csgo-auto-accept-wpf/logo.png",
+    "CS2 Auto Accept is a WPF project inspired by my previous experience with capturing the screen and using OCR. It automates the process of accepting a match found in Counter Strike.",
+    "In Counter Strike, when a match is found, you have to manually accept it by moving your cursor over the \"ACCEPT\" button and pressing it. This repetitive task can become tedious. With CS2 Auto Accept, I have leveraged screen capturing and optical character recognition (OCR) to create a console application that performs this task automatically. Now, I can sit back and wait for the match to start without any manual intervention. It's all about finding efficient solutions to everyday problems!",
+    "./img/projects/csgo-auto-accept-wpf/screenshot.png",
+    "",
+    new Date("10 Sep 2023"),
+    "https://github.com/tsgsOFFICIAL/CS2-AutoAccept"
 ));
 
 projectArray.push(new Project(
@@ -120,7 +131,7 @@ projectArray.push(new Project(
     "I programmed a keylogger in C#, because it's just one of those things I've always wanted to program, or atleast attempt. This was never a malicious activity, and is kept private to stay that way. I have no intentions of sharing the code with bad people. It was just a personal challenge of mine.",
     "./img/projects/keylogger/code.png",
     "./img/projects/keylogger/icon.gif",
-    new Date("18 Oct 2020")
+    new Date("18 Nov 2020")
 ));
 
 projectArray.push(new Project(
@@ -160,11 +171,66 @@ projectArray.push(new Project(
     "My Portfolio",
     "./img/selfie_rounded.png",
     "Obviously I made this portfolio, and I'm actually quite proud of it! It shows some of my work, and accomplishments!",
-    "I made this portfolio to increase my chances of landing a job in tech, and possible as a developer (Score!).<br>It all worked out, as I know work for a Danish company as a software developer.<br>It's available on Github!",
+    "I made this portfolio to increase my chances of landing a job in tech, and possible as a developer (Score!).<br>It all worked out, as I now work for a Danish company as a software developer.<br>It's also available on Github!",
     "./img/selfie.png",
     "",
     new Date("5 Dec 2021"),
     "https://github.com/tsgsOFFICIAL/Portfolio"
+));
+
+projectArray.push(new Project(
+    "Subnet Calculator",
+    "./img/projects/subnet-calculator/logo.png",
+    "A subnet calculator that helps with network configuration and IP address calculations.",
+    "I created this subnet calculator to assist with network configuration and IP address calculations. It provides an easy-to-use interface for subnetting and calculating network parameters such as network address, broadcast address, and available host addresses.",
+    "./img/projects/subnet-calculator/screenshot.png",
+    "",
+    new Date("12 Jan 2020"),
+    "https://github.com/tsgsOFFICIAL/Subnet-Calculator"
+));
+
+projectArray.push(new Project(
+    "PWA's",
+    "./img/projects/pwa/logo.png",
+    "Progressive Web Apps (PWA) are web applications that provide a native app-like experience on the web.",
+    "I have developed several Progressive Web Apps (PWA) that offer a seamless user experience across devices. PWAs combine the best of web and mobile apps, providing fast loading times, offline functionality, and push notifications, just to mention a couple of the benefits.",
+    "./img/projects/pwa/screenshot.jpg",
+    "",
+    new Date("17 Nov 2022"),
+    "https://github.com/tsgsOFFICIAL/MQTT-Parcel-Website-DOTNET"
+));
+
+projectArray.push(new Project(
+    "Flutter Apps",
+    "./img/projects/flutter/logo.png",
+    "Flutter is an open-source UI software development kit created by Google. It is used to develop applications for Android, iOS, Linux, Mac, Windows, Google Fuchsia, and the web from a single codebase.",
+    "I have developed several applications using Flutter, a versatile framework that allows for cross-platform app development. Flutter apps are known for their fast performance, expressive UI, and native-like experience on multiple platforms.",
+    "./img/projects/flutter/screenshot.jpg",
+    "",
+    new Date("15 Jan 2024"),
+    ""
+));
+
+projectArray.push(new Project(
+    "MQTT Broker In Rust",
+    "./img/projects/mqtt-broker/logo.png",
+    "MQTT (Message Queuing Telemetry Transport) is a lightweight messaging protocol that is ideal for IoT applications.",
+    "I developed an MQTT broker in Rust, a high-performance, safe, and concurrent programming language. The MQTT broker facilitates communication between IoT devices, enabling them to exchange data in a secure and efficient manner.",
+    "./img/projects/mqtt-broker/screenshot.png",
+    "",
+    new Date("20 Feb 2024"),
+    "https://github.com/tsgsOFFICIAL/MQTT-Broker"
+));
+
+projectArray.push(new Project(
+    "TikTak",
+    "./img/projects/tiktak/logo.jpg",
+    "TikTak is a TikTok clone, made in Flutter for an exam project.",
+    "TikTak is a TikTok clone developed using Flutter, a versatile framework for building cross-platform applications. The app allows users to create, share, and discover short videos, similar to the popular social media platform TikTok. The project was created as part of an exam assignment and showcases my skills in mobile app development. The idea behind TikTak came after many lawsuits against TikTok, and I wanted to see if I could make a similar app, but with a different name and logo.",
+    "./img/projects/tiktak/screenshot.png",
+    "",
+    new Date("25 Mar 2024"),
+    "https://github.com/tsgsOFFICIAL/TikTak"
 ));
 
 //#endregion
