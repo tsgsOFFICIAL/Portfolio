@@ -274,7 +274,7 @@ function animationEnd() {
 
 function updateProjects() {
     projectsContainer.innerHTML = "";
-    projectArray.forEach((project) => {
+    projectArray.forEach((project, index) => {
         // Create card
         const card = document.createElement("article");
         card.className = "card";
@@ -368,9 +368,20 @@ function updateProjects() {
         // Append bottom section to the card
         card.appendChild(bottom);
 
+        // Append card to projects container
         projectsContainer.appendChild(card);
+
+        // Add class for fade-in animation with delay
+        card.classList.add("fadeIn");
+        card.style.animationDelay = `${index * .05}s`; // Adjust delay as needed
+
+        // Remove the fade-in class after animation ends
+        card.addEventListener("animationend", () => {
+            card.classList.remove("fadeIn");
+        });
     });
 }
+
 
 /*
 # USAGE

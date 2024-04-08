@@ -20,30 +20,10 @@
         <script type="text/javascript" src="./js/cookie.js" defer></script>
         <script type="text/javascript" src="./js/main.js" defer></script>
         <script type="text/javascript" src="./js/projects.js" defer></script>
-        <style>
-            /* Dev banner styling */
-            #dev_banner {
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: auto;
-                height: auto;
-                background: red;
-                font-size: 1.69rem;
-                margin: 0;
-                padding: .25rem 1rem;
-                z-index: 2;
-            }
-
-            #dev_banner * {
-                color: white;
-            }
-        </style>
+        <script type="text/javascript" src="./js/skills.js" defer></script>
     </head>
 
     <body id="home">
-        <p id="dev_banner">Page is in development as of 4th of april, 2024</p>
-
         <header>
             <h1>Marcus Jensen</h1>
             <nav>
@@ -116,73 +96,62 @@
             <article id="about">
                 <h2>Who am I?</h2>
 
-                <span class="container">
+                <section class="container">
                     <section>
-                        <p>I'm a programming student, located in Denmark.</p>
-                        <p>
-                            I have a burning passion for programming.
-                            I love doing front-end as well as back-end work, where I focus on everything from intuitive UI & animations, to everything needed to make a great application work & function properly.
-
-                        </p>
-                        <p>In short I am:</p>
-
+                        <p>Greetings from the land of LEGO and hygge!</p>
+                        <h3>TL;DR</h3>
                         <ul class="strike before">
-                            <li>Independent</li>
-                            <li>Very structered</li>
-                            <li>Well organised</li>
-                            <li>Very stable</li>
-                            <li>Semi patient</li>
-                            <li>Flexible</li>
+                            <li>Passionate Danish programmer</li>
+                            <li>Skilled in both front-end and back-end development</li>
+                            <li>Independent, organized, and stable</li>
+                            <li>Flexible problem solver, with a touch of patience</li>
                         </ul>
 
-                        <div>
-                            <h2>Seems interesting?</h2>
-                            <h3>Get in touch!</h3>
+                        <p>I'm not just any programming student; I'm a Danish dynamo with a keyboard and a dream. Nestled in the heart of Denmark, I'm on a mission to turn lines of code into digital masterpieces.</p>
+                        <p>Picture this: as the rain gently taps against my window, I'm crafting elegant solutions to complex problems. I thrive on the challenge of building sleek user interfaces that leave users in awe and robust backend systems that power the digital world.</p>
+
+                        <p>Here's a sneak peek into what makes me tick:</p>
+
+                        <ul class="strike before">
+                            <li><span class="point_of_interest">Independent thinker:</span> I blaze my own trail through the digital wilderness, unafraid to explore uncharted territories.</li>
+                            <li><span class="point_of_interest">Master of organization:</span> My desk may look chaotic, but my code is as tidy as a Danish home.</li>
+                            <li><span class="point_of_interest">Structured like a LEGO tower:</span> I build my projects brick by brick, ensuring each piece fits snugly into place.</li>
+                            <li><span class="point_of_interest">Stable as a Viking ship:</span> My code sails through stormy seas without breaking a sweat, thanks to my knack for stability.</li>
+                            <li><span class="point_of_interest">Patience of a saint (well, mostly):</span> Debugging may test my patience, but I never back down from a challenge.</li>
+                            <li><span class="point_of_interest">Flexible like a Danish pastry:</span> I adapt to changing requirements like a pastry dough shaping itself to fit any mold.</li>
+                        </ul>
+
+                        <p>But wait, there's more! When I'm not diving into the world of coding, you'll often find me out on the Airsoft field, strategizing with friends and honing my tactical skills. Alternatively, you might catch me tinkering under the hood of a car, unleashing my inner mechanic and enjoying the thrill of turning wrenches. And when it's time to unwind, nothing beats a cozy session of hygge, where I can relax with good company, warm drinks, and a tranquil atmosphere.</p>
+
+                        <div class="contact-me">
+                            <h2>Feeling intrigued?</h2>
+                            <h3>Let's connect!</h3>
                         </div>
 
-                        <p>
-                            I can do Freelance as well as full-time employment.
-                        </p>
+                        <p>Whether you're in need of a freelance coding wizard or looking to add a stable asset to your team, I'm your person. Let's collaborate and turn your digital dreams into reality!</p>
                     </section>
 
-                    <section>
-                        <img src="img/selfie.png" alt="Picture of me" title="This is me" />
+
+                    <section id="skills">
+                        <h2>My Skills</h2>
                     </section>
-                </span>
+                </section>
             </article>
 
             <article id="contact">
-                <section style="position: relative;">
-                    <h2>Send me a letter!</h2>
-
-                    <article class="letter">
-                        <div class="side">
-                            <h1>Contact us</h1>
-                            <br>
-                            <textarea placeholder="Your message" required=""></textarea>
-                        </div>
-                        <div class="side">
-                            <br>
-                            <input type="text" placeholder="Your name">
-
-                            <br>
-                            <input type="email" placeholder="Your email">
-
-                            <br>
-                            <button id="sendLetter">Send</button>
-
-                        </div>
-                    </article>
-                    <div class="envelope front"></div>
-                    <div class="envelope back"></div>
-                </section>
-
-                <p class="result-message centered">Thank you for your message</p>
+                <h2>Send me a postcard!</h2>
+                <div class="letter animate">
+                    <form id="contact_form">
+                        <input type="email" id="email" placeholder="Email" required>
+                        <textarea id="message" placeholder="Message" required></textarea>
+                        <input id="sendEmail" type="button" value="Send">
+                    </form>
+                </div>
             </article>
         </main>
 
         <footer>
-            <h2>&copy; 2020 - <span id="currentYear">xxxx</span> <a class="underline hover from-middle" href="./" target="_self">Marcus Jensen</a>, All Rights Reserved.</h2>
+            <h2>&copy; 2020 - <span id="currentYear"></span> <a class="underline hover from-middle" href="./" target="_self">Marcus Jensen</a>, All Rights Reserved.</h2>
         </footer>
     </body>
 
