@@ -1,5 +1,3 @@
-const apiKey = process.env.API_KEY;
-
 document.addEventListener("DOMContentLoaded", () => {
     // Hide email and message initially
     document.getElementById("email").style.display = "none";
